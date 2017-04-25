@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+      }
+    }
+}
+.titre{
+  text-align: center;
+  p{
+    text-transform: uppercase;
+  }
+}
+
+.bigshow{
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  display: flex;
+  justify-content: space-around; }
+  ul li {
+    list-style: none; }
+    ul li a {
+      text-decoration: none; }
+
+.titre {
+  text-align: center; }
+  .titre p {
+    text-transform: uppercase; }
+
+.bigshow {
+  display: flex;
+  justify-content: space-around; }
+
+/*# sourceMappingURL=style.css.map */

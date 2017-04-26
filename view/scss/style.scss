@@ -1,15 +1,14 @@
 body{
   margin: 0;
   padding: 0;
-background-image: url('../view/images/montblanc.jpg');
+background-image: url('../images/s8.png');
 background-size: cover;
-background-attachment: fixed;
 }
 
 ul{
   display: flex;
   justify-content: space-around;
-    margin:0;
+
     li{
       list-style: none;
       a{
@@ -53,7 +52,6 @@ ul{
   display:flex;
   align-items: center;
   justify-content: space-around;
-  color:white;
       .msn{
           float:left;
           border: 3px solid white;

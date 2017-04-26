@@ -15,12 +15,7 @@
            $this->database = $database;
          }
 
-         try {
-           $this->db = new PDO('mysql:host='.$this->host. ';dbname='.$this->database, $this->username, $this
-           ->password, array(PDO::MYSQL_ATTR_INIT_COMMAND =>'SET NAMES UTF8'));
-         } catch (PDOException $e) {
-           die('impossible de se connecter a la BDD');
-         }
+         
 
        }
       //  on cree une methode qui permet de faire une requete plus rapidement

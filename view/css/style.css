@@ -1,14 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../view/images/montblanc.jpg");
-  background-size: cover;
-  background-attachment: fixed; }
+  background-image: url("../images/s8.png");
+  background-size: cover; }
 
 ul {
   display: flex;
-  justify-content: space-around;
-  margin: 0; }
+  justify-content: space-around; }
   ul li {
     list-style: none; }
     ul li a {
@@ -44,8 +42,7 @@ ul {
   transition-duration: 2s;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  color: white; }
+  justify-content: space-around; }
   #messi:target .msn {
     float: left;
     border: 3px solid white;

@@ -1,4 +1,8 @@
- <?php require 'header.php'; ?>
+<?php require 'header.php'; ?>
+<?php
+// var_dump permet d'afficher
+var_dump($DB->query('SELECT * FROM phone'));
+ ?>
     <main>
       <div class="titre">
         <p> your phone </p>
@@ -30,14 +34,15 @@
 
           <div class="fifth">
             <section>
-              <a href="#"> sony z experia </a>
+              <!-- <a href="#"> sony z experia </a> -->
             </section>
           </div>
             <div class="htc">
               <section>
-                <a href="#">htc</a>
+                <!-- <a href="#">htc</a> -->
               </section>
             </div>
       </div>
     </main>
-  <?php require 'footer.php' ;?>
+    <!-- footer -->
+    <?php require 'footer.php'; ?>

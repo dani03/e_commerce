@@ -14,7 +14,7 @@
     sunt in culpa qui officia deserunt mollit anim id est laborum.
   </div>
 
-  <div class="suivez">
+  <div class="suivre">
 
     <span>suivez nous sur twitter</span>
     <span>suivez nous sur instagram</span>

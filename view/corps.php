@@ -15,6 +15,7 @@
               <section>
                 <a href="#"><img src="../view/images/iphone_large.jpg" alt=""> apple </a>
                 <span>prix:350 €</span>
+                <a href="#"><button type="button" name="button">ajouter</button></a>
               </section>
         </div>
 

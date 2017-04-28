@@ -1,5 +1,9 @@
-<?php require '../view/header.php'; ?>
-<?php require '../model/connexion.php'; ?>
-<?php require '../view/corps.php'; ?>
-<!-- footer -->
-<?php require '../view/footer.php'; ?>
+<?php
+ require '../model/model.php';
+ require '../view/header.php';
+ require '../view/corps.php';
+ require '../model/connexion.php';
+// <!-- body -->
+
+// <!-- footer -->
+require '../view/footer.php';

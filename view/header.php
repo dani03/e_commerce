@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>E-commerce</title>
+     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Kalam" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
     <nav>
@@ -24,24 +27,24 @@
 
         <div class="msn">
            <h2>connectez-vous </h2>
-             <form class="formulaire" action="" method="post">
+             <form class="formulaire" action="../view/inscrip.php" method="post">
                <label for="email">email:</label>
-                <input type="text" name="email" id='email' value=""><br>
+                <input type="email" name="email" id='email' value="" required="" placeholder="exemple@gmail.com"><br>
                 <label for="password">mot de passe:</label>
-                <input type="password" name="password" id='password'value="">
+                <input type="password" name="password" id='password'value="" required="" placeholder="entrer votre mot de passe">
                 <input type="submit" name="submit" value="valider"><br>
             </form>
         </div>
                         <!-- formulaire d'inscription -->
           <div class="borgia">
             <h2> inscrivez vous </h2><br>
-                <form class="" action="" method="post"> <br>
+                <form class="" action="../view/compte.php" method="post"> <br>
                     <label for="nom">nom : </label>
                     <input type="text" name="nom" value="" placeholder="entrez votre nom" id='nom'><br>
                     <label for="lastname">prenom :</label>
                     <input type="text" name="prenom" value="" placeholder="entrez votre prenom" id='lastname'><br>
                     <label for="mail">email:</label>
-                    <input type="e-mail" name="e-mail" value="" placeholder="exemple@gmail.com"id='mail' required=""><br>
+                    <input type="email" name="email" value="" placeholder="exemple@gmail.com" required=""><br>
                     <label for="mdp">mot de passe :</label>
                     <input type="password" name="password" value="" id='mdp' placeholder="entrez votre mot de passe" required="">
                     <input type="submit" name="submit" value="s'inscrire"><br>

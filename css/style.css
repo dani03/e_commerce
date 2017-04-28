@@ -5,14 +5,31 @@ body {
   background-size: cover;
   background-attachment: fixed; }
 
+.titre h1 {
+  text-shadow: 0 0 3px #FF0000;
+  text-transform: uppercase; }
+
+* {
+  font-family: 'Gentium Book Basic', serif; }
+
+a {
+  text-decoration: none; }
+
 ul {
-  display: flex;
+  display: inline;
+  align-items: center;
   justify-content: space-around;
   margin: 0; }
   ul li {
-    list-style: none; }
+    list-style-type: none;
+    display: inline;
+    justify-content: center; }
     ul li a {
       text-decoration: none; }
+
+li:hover {
+  text-decoration: underline blue;
+  transition: 1s; }
 
 .titre {
   text-align: center; }
@@ -21,7 +38,20 @@ ul {
 
 .bigshow {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .bigshow section {
+    width: 30%;
+    height: 400px;
+    margin: 5px 5px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: white; }
+
+.htc {
+  align-self: flex-end; }
 
 .colonne1 {
   display: inline;
@@ -45,7 +75,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white; }
+  color: midnightblue; }
   #messi:target .msn {
     float: left;
     border: 3px solid white;
@@ -62,9 +92,33 @@ ul {
     text-align: center; }
 
 nav {
-  background-color: black;
+  background-color: rgba(13, 0, 0, 0.5);
   margin-top: 0px;
   border-radius: 2px;
-  color: white; }
+  color: gray; }
+
+.first {
+  background-image: url("../view/images/galaxy-s8.jpg");
+  background-size: cover; }
+
+.second {
+  background-image: url("../view/images/iphone.jpeg");
+  background-size: 100%; }
+
+.third {
+  background-image: url("../view/images/wiko.png");
+  background-size: cover; }
+
+.four {
+  background-image: url("../view/images/oneplus.jpg");
+  background-size: cover; }
+
+.fifth {
+  background-image: url("../view/images/z5sony.jpg");
+  background-size: cover; }
+
+.htc {
+  background-image: url("../view/images/htc.jpg");
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

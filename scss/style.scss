@@ -4,6 +4,7 @@ body{
 background-image: url('../view/images/montblanc.jpg');
 background-size: cover;
 background-attachment: fixed;
+
 }
 .titre{
   h1{
@@ -18,26 +19,25 @@ font-family: 'Gentium Book Basic', serif;
 a{
   text-decoration: none;
 }
-ul{
-  display: inline;
+ul {
+  display: inline-flex;
   align-items: center;
   justify-content: space-around;
-    margin:0;
-    li{
-      list-style-type: none;
-      display: inline;
-      justify-content:center;
-
-      a{
-        text-decoration: none;
-      }
-    }
+  margin: 0;
+  width: 100%;
+}
+ul li {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content:  space-around;
 }
 
-li:hover{
-    text-decoration: underline blue ;
-    transition: 1s;
-}
+
+ul a:hover {
+  text-decoration: none;
+  transition: 1s;
+  text-decoration: underline blue;
+ }
 .titre{
   text-align: center;
   p{
@@ -58,10 +58,17 @@ li:hover{
        border: 1px solid gray;
        border-radius: 3px;
        color:white;
+       cursor: pointer;
      }
 }
-.htc{
-  align-self: flex-end;
+#samsung{
+  display:flex;
+
+  .allbutton{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .colonne1{
     display:inline ;
@@ -115,6 +122,9 @@ nav{
   margin-top: 0px;
   border-radius:2px;
   color:gray;
+  position: relative;
+
+
 
 }
 
@@ -147,4 +157,18 @@ nav{
 .htc{
   background-image:  url('../view/images/htc.jpg');
   background-size: cover;
+}
+
+// samsung S8
+.images .texte1{
+  width: 50%;
+}
+
+.presentation{
+   .images{
+
+         h2{
+           text-align: center;
+         }
+   }
 }

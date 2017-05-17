@@ -16,20 +16,21 @@ a {
   text-decoration: none; }
 
 ul {
-  display: inline;
+  display: inline-flex;
   align-items: center;
   justify-content: space-around;
-  margin: 0; }
-  ul li {
-    list-style-type: none;
-    display: inline;
-    justify-content: center; }
-    ul li a {
-      text-decoration: none; }
+  margin: 0;
+  width: 100%; }
 
-li:hover {
-  text-decoration: underline blue;
-  transition: 1s; }
+ul li {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-around; }
+
+ul a:hover {
+  text-decoration: none;
+  transition: 1s;
+  text-decoration: underline blue; }
 
 .titre {
   text-align: center; }
@@ -48,10 +49,15 @@ li:hover {
     background-position: center;
     border: 1px solid gray;
     border-radius: 3px;
-    color: white; }
+    color: white;
+    cursor: pointer; }
 
-.htc {
-  align-self: flex-end; }
+#samsung {
+  display: flex; }
+  #samsung .allbutton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
 
 .colonne1 {
   display: inline;
@@ -95,7 +101,8 @@ nav {
   background-color: rgba(13, 0, 0, 0.5);
   margin-top: 0px;
   border-radius: 2px;
-  color: gray; }
+  color: gray;
+  position: relative; }
 
 .first {
   background-image: url("../view/images/galaxy-s8.jpg");
@@ -120,5 +127,11 @@ nav {
 .htc {
   background-image: url("../view/images/htc.jpg");
   background-size: cover; }
+
+.images .texte1 {
+  width: 50%; }
+
+.presentation .images h2 {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

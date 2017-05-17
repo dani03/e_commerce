@@ -1,32 +1,18 @@
 <?php
-
-require 'connexion.php';
-//
-// $nom = $_POST['nom'];
-// $prenom = $_POST['prenom'];
-// $email = $_POST['email'];
-// $mdp = $_POST['password'];
-
-// on verifie si les champs on bien ete rempli
-if(isset($_POST['nom']) && isset($_POST['prenom']) && (isset($_POST['email']) && isset($_POST['password']))){
-if(isset($_POST['submit'])){
-  $req = $bdd->prepare("INSERT INTO phone(nom, prenom, email, mdp) VALUES(:nom, :prenom, :email, :mdp)");
-  $req->execute(array(
-    'nom' => $_POST['nom'],
-    'prenom' => $_POST['prenom'],
-    'email' => $_POST['email'],
-    'mdp' => $_POST['password']
-  ));
-  $req->closeCursor();
-}
+function connexion(){
+  $bdd = new PDO('mysql:host=localhost;dbname=phoneCell;charset=utf8','phpmyadmin','root');
+  return $bdd;
 }
 
-else
-{
-  echo 'error veuillez  recommencer';
+// function connexion
+function login($email){
+  $bdd = connexion();
+  $connexion = $bdd->query('SELECT email, mdp FROM phone WHERE email="'.$email.'"');
+  return $connexion; // return le select
 }
-//
-// if($req->execute()==TRUE){
-//   echo '<p>votre inscription reussi</p>';
-// }
+
+function inscription($nom,$prenom,$email,$password){
+  $bdd = connexion();
+  $inscription = $bdd->exec('INSERT INTO  phone('nom, prenom, email, mdp')
+}
 ?>

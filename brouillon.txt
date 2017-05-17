@@ -1,4 +1,0 @@
-
-// on verifie si les champs on bien ete rempli
-// if(isset($_POST['nom']) && isset($_POST['prenom'])){
-// if(isset($_POST['email']) && isset($_POST['password'])){

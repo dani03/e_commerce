@@ -10,9 +10,17 @@ function login($email){
   $connexion = $bdd->query('SELECT email, mdp FROM phone WHERE email="'.$email.'"');
   return $connexion; // return le select
 }
-
-function inscription($nom,$prenom,$email,$password){
+// on cree la function inscription
+function inscription($tab){
   $bdd = connexion();
-  $inscription = $bdd->exec('INSERT INTO  phone('nom, prenom, email, mdp')
+  $inscription = $bdd->prepare('INSERT INTO phone(nom,prenom,email,mdp) VALUES(:nom,:prenom,:email,:mdp)');
+  $inscription->execute($tab);
 }
+
+// on cree la function pour modifier ses coordonnées
+function parametre(){
+  $bdd = connexion();
+
+}
+
 ?>

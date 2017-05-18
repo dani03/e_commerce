@@ -20,6 +20,7 @@
         <li> htc </li>
         <?php if($_SESSION['login'] === "ok"){
         echo "<li><a href='../view/deconnexion.php'>deconnexion</a</li>";
+        echo "<li><a id='parametre' href='../view/modif.php'>parametres du compte</a>";
         }
         else {
         echo "<li><a href='#messi'> s'inscrire / se connecter</a></li>";

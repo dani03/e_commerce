@@ -1,25 +1,24 @@
 <?php
 session_start();
-require '../view/header.php';
 require '../model/model.php';
 
-$email = $_POST['email'];
-$mdp = $_POST['password'];
-
 $tab = array(
-  'email'=> $_POST['email'],
-  'excute'=> $_POST['password']
+  ':email'=> $_POST['email'],
+  ':mdp'=> $_POST['password'],
+  ':nom'=> $_POST['nom'],
+  ':prenom'=> $_POST['prenom'],
+
   );
 
-if(isset($_POST['email']) && isset($_POST['password'])){
+if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['nom']) && isset($_POST['prenom'])){
   if(isset($_POST['submit'])){
-      inscription($tab);
-      echo "<h1>inscription reussie</h1>";
+          inscription($tab);
+      echo"<section>inscription reussie<a href='../view/formulaire.php'>connectez vous ici</a></section>";
   }
-}
  else{
    echo ' bad error';
  }
+}
+ require '../view/index.php';
 
-require '../view/index.php';
 ?>

@@ -29,23 +29,22 @@ function ajoutArticle($nomProduit,$quantiteProduit,$prixProduit){
            array_push($_SESSION['panier']['prixProduit'],$prixProduit);
        }
 
-    }
- else
-  echo "probleme survenu niveau ajout d'article";
-
-
+     }
+     else{
+      echo "probleme survenu niveau ajout d'article";
+     }
 }
 
-                // on cree une function suppression d'un article
+    // on cree une function suppression d'un article
 
     function supprimeArticle($nomProduit){
       if(creationPanier() && !isVerrouille()){
         // la creation d'un panier temporaire
         $temporaire = array();
-        $temporaire = ['nomProduit'] = array();
-        $temporaire = ['quantiteProduit'] = array();
-        $temporaire = ['prixProduit'] = array();
-        $temporaire = ['verou'] = $_SESSION['panier']['verou'];
+        $temporaire['nomProduit'] = array();
+        $temporaire['quantiteProduit'] = array();
+        $temporaire['prixProduit'] = array();
+        $temporaire['verou'] = $_SESSION['panier']['verou'];
 
         for($i = 0; $i < count($_SESSION['panier']['nomProduit']); $i++){
           if($_SESSION['panier']['nomProduit'][$i] !== $nomProduit)  {

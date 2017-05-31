@@ -10,10 +10,12 @@ session_start();
     <div class="msn">
        <h2>connectez-vous </h2>
          <form class="formulaire" action="../controleur/connexionCtrl.php" method="post">
+           <label for="">nom :</label>
+           <input type="text" name="nom" value="" required="entrez un nom" placeholder="entrez votre nom">
            <label for="email">email:</label>
             <input type="email" name="email" id='email' value="" required="" placeholder="exemple@gmail.com"><br>
             <label for="password">mot de passe:</label>
-            <input type="password" name="password" id='password'value="" required="" placeholder="entrer votre mot de passe">
+            <input type="password" name="password" pattern=".{6,}" id='password'value="" required="" placeholder="entrer votre mot de passe">
             <input type="submit" name="submit" value="valider"><br>
         </form>
     </div>
@@ -28,7 +30,7 @@ session_start();
                 <label for="mail">email:</label>
                 <input type="email" name="email" value="" placeholder="exemple@gmail.com" required=""><br>
                 <label for="mdp">mot de passe :</label>
-                <input type="password" name="password" value="" id='mdp' placeholder="entrez votre mot de passe" required="">
+                <input type="password" pattern=".{6,}" name="password" value="" id='mdp'  placeholder="entrez votre mot de passe" required="">
                 <input type="submit" name="submit" value="s'inscrire"><br>
             </form>
       </div>

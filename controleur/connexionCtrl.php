@@ -5,17 +5,19 @@ require '../model/model.php';
 
 
 if(isset($_POST['submit'])){
+  $nom = $_POST['nom'];
   $email = $_POST['email'];
   $password = $_POST['password'];
 
   $connexion = login($email);
 
   foreach ($connexion as $reponse) {
+    $nomR = $reponse['nom'];
     $mdp =  $reponse['mdp'];
     $emailR =  $reponse['email'];
   }
 
-  if($mdp === $password && $emailR === $email){
+  if($mdp === $password && $emailR === $email && $nomR === $nom){
      header("Location:/projetSiteEcommerce/view/espace_abonne.php");
     $_SESSION['login'] = "ok";
   }

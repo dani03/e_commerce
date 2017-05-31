@@ -8,7 +8,7 @@ if($_SESSION['login'] != "ok"){
 
 }
 else {
-  echo "<h1>bienvenue sur votre espace abonné !!</h1> ";
+  echo "<h1>bienvenue sur votre espace abonné" . $_POST['nom'] ." !!</h1> ";
 }
 
 ?>
